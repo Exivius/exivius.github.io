@@ -1,0 +1,188 @@
+/*ESTILOS GENERALES*/
+body{
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+    color: #FFD700;
+}
+
+/*Se da estilo a todos los botones*/
+.allButton{
+    border-radius: 5px;
+    background-color: #B80F0F;
+    color: #FFD700;
+        border: 1px solid white;
+
+}
+
+/*Se definir la clase para sobreescribir algunas de las propiedades por defecto de bootstrap*/
+.font_color{
+    color: #FFD700;
+}
+
+/*Efecto al poner el cursor sobre un link*/
+.font_color:hover{
+    color: #d1cfc3;
+}
+
+/*Efecto al poner el cursor sobre un boton*/
+.allButton:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #FFD700;
+    background-color: #B80F0F;
+
+    
+}
+
+/*Se da estilos a los imputs cuando esten siendo seleccionados*/
+input[type="text"]:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+/*Efecto que da al "pararse" sobre un cuadro de texto*/
+input[type="text"]:focus::placeholder{
+    color: #FFD700;
+}
+
+/*Efecto que da al pararse sobre un cuadro numerico*/
+input[type="number"]:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+input[type="date"]:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+input[type="time"]:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+.form-select:focus{
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    background-color: #B80F0F;
+    color: #FFD700;
+}
+
+/*Elimina la decoración por defecto de los links*/
+a{
+    text-decoration: none;
+    color: #FFD700;
+    margin: auto;
+    padding: 10px;
+}
+
+/*Da efecto al poner el cursor sobre un link*/
+a:hover{
+    color: #d1cfc3;
+}
+
+li{
+    list-style: none;
+}
+
+/*ESTILOS DEL HEADER*/
+
+/*Le da tamaño al logo que va al lado del nombre*/
+.header_img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+/*ESTILOS DEL MAIN*/
+
+/*Le añade margen superior a las tarjetas de la cartelera*/
+.movie_card{
+    margin-top: 90px;
+}
+
+/*Hace que los elementos del formulatio de compra queden uno debajo del otro*/
+.form_purchase{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Da espacio al titlo de cartelera*/
+.container_cartelera{
+    margin-top: 50px;
+    background-color: #B80F0F;
+    border-radius: 5px;
+}
+
+/*formulario de compra*/
+
+/*Añade margenes el formulario de compra*/
+.purchase_form{
+    margin: 100px;
+}
+
+/*Estilos del detalle de la pelicula*/
+
+.movie-details{
+    background-color: #B80F0F;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+/*Se le cambia el tamaño a la imagen de la pagina del detalle de la pelicula*/
+.movie_poster img{
+    width: 250px;
+}
+
+/*Ajustando el video para que sea reponsive*/
+.movie-trailer{
+    position: relative;
+    width: 100%;
+}
+
+/*ESTILOS DEO FOOTER*/
+.footer_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #B80F0F;
+    margin-top: 30px;
+}
+
+/*Permite organizar en fila los elementos del footer cuando se alcance 768px*/
+
+
+.footer_information section{
+    padding: 5px;
+    margin: auto;
+}
+
+/*Establece un tamaño predeterminado para las imagenes de contacto*/
+.footer_contact img{
+    width: 24px;
+    height: 24px;
+}
+
+/*Agrega efecto al poner el cursor encima de los iconos de contacto*/
+.footer_contact a:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    border-radius: 100px;
+}

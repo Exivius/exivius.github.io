@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>CineMax CESDE</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #B80F0F;">
+            <section class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: #FFD700;">
+                    <img src="./img/logo1.png" alt="Bootstrap" width="30" height="24"
+                        class="header_img">
+                    CineMax CESDE
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <sectin class="navbar-nav">
+                        <a class="nav-link font_color" aria-current="page"
+                            href="./index.html">Inicio/Peliculas</a>
+                        <a class="nav-link font_color" href="./purchaseForm.html">Comprar</a>
+                        <a class="nav-link font_color" href="#">Ingresa</a>
+                </section>
+            </section>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <!-- Se genera el contenedor que contiene las demas etiquetas -->
+        <section class="container">
+            <!-- Se determina que ocupara un espacio de 12 columnas para el total del contenedor -->
+            <section class="grid-box col-12 text-center container_cartelera">
+                <h1 class="container_cartelera"><strong>Cartelera</strong></h1>
+            </section>
+            <section class="row">
+                <section class="grid-box col-sm-12 col-md-3 col-lg-6 movie_card">
+                    <section class="card mb-3" style="max-width: 540px;">
+                        <!-- g-0 elimina todos los margenes/espacios en el sistema de cuadriculas -->
+                        <section class="row g-0">
+                            <section class="col-md-4">
+                                <img src="./img/MortalKombat.jpg" class="img-fluid rounded-start"
+                                    alt="Mortal Kombat II">
+                            </section>
+                            <section class="col-md-8">
+                                <section class="card-body">
+                                    <h5 class="card-title">MORTAL KOMBAT II</h5>
+                                    <p>Fecha de estreno: Jue, May 7 2026</p>
+                                    <a href="#" class="btn btn-primary allButton">Ver más</a>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section class="grid-box col-sm-12 col-md-3 col-lg-6 movie_card">
+                    <section class="card mb-3" style="max-width: 540px;">
+                        <section class="row g-0">
+                            <section class="col-md-4">
+                                <img src="./img/elDiabloVisteAlaModa.jpg"
+                                    class="img-fluid rounded-start" alt="Hary Potter">
+                            </section>
+                            <section class="col-md-8">
+                                <section class="card-body">
+                                    <h5 class="card-title">EL DIABLO VISTE A LA MODA 2</h5>
+                                    <P>Fecha de estreno: Jue, Abr 30 2026</P>
+                                    <a href="./movieDetails.html"
+                                        class="btn btn-primary allButton">Ver más</a>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section class="grid-box col-sm-12 col-md-3 col-lg-6 movie_card">
+                    <section class="card mb-3" style="max-width: 540px;">
+                        <section class="row g-0">
+                            <section class="col-md-4">
+                                <img src="./img/Michael.jpg" class="img-fluid rounded-start"
+                                    alt="...">
+                            </section>
+                            <section class="col-md-8">
+                                <section class="card-body">
+                                    <h5 class="card-title">MICHAEL</h5>
+                                    <p>Fecha de estreno: Jue, Abr 23 2026</p>
+                                    <a href="#" class="btn btn-primary allButton">Ver más</a>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section class="grid-box col-sm-12 col-md-3 col-lg-6 movie_card">
+                    <section class="card mb-3" style="max-width: 540px;">
+                        <section class="row g-0">
+                            <section class="col-md-4">
+                                <img src="./img/SuperMarioGalaxy.jpg" class="img-fluid rounded-start"
+                                    alt="...">
+                            </section>
+                            <section class="col-md-8">
+                                <section class="card-body">
+                                    <h5 class="card-title">SUPER MARIO GALAXY: LA PELÍCULA</h5>
+                                    <p>Fecha de estreno: Jue, Abr 2 2026</p>
+                                    <a href="#" class="btn btn-primary allButton">Ver más</a>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!-- py-1 añade espacio vertical (relleno o padding) -->
+    <footer class="py-3 footer_information" style="background-color: #B80F0F;">
+        <section class="container">
+            <section class="row g-4">
+                <!-- Company Info -->
+                <!-- El primero col-lg sirve para definir que el elemento ocupara x numero de las 12 columnas disponibles
+                 para pantallas grandes (992px en adelante).
+                 El segundo col-md sirve para definir que el elemento ocupara x numero de las 12 columnas disponibles
+                 para pantallas medianas (computadoras de escritorio) -->
+                <section class="col-lg-4 col-md-6">
+                    <!-- la clase mb- sirve para agregar margen inferior (separación) -->
+                    <h5 class="mb-3">Acerca de nosotros</h5>
+                    <p class="mb-4">Proyecto integrador para la carrera de Técnico Laboral como Asistente en
+                        Desarrollo de Software cursado en el CESDE</p>
+                    <section class="social-links">
+                        <a href="#" class="social-icon bg-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon bg-info"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon bg-danger"><i class="fab fa-instagram"></i></a>
+                    </section>
+                </section>
+
+                <!-- Quick Links -->
+                <section class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Información general</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">Información Legal</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Acerca de CineMax CESDE</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Contactenos PQRS</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Contactenos PQRS</a></li>
+                    </ul>
+                </section>
+                <!-- Contact Info -->
+                <section class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">Oficina Corporativa</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Calle Falsa, Medellín, Antioquia, Colombia
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+1234567890" class="footer-link"> (301) 123-45-67</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:contact@example.com" class="footer-link"> info@CineMaxCESDE.com</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- mt- añade margen superior al elemento -->
+            <section class="row mt-1">
+                <section class="col-12">
+                    <!-- Genera la linea visible que separa los links de la declaración de derechos -->
+                    <hr class="mb-4">
+                    <section class="text-center">
+                        <p class="mb-0">&copy; 2026 CineMax CESDE Todos los derechos reservados.</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
