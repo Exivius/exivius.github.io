@@ -26,8 +26,7 @@ body{
 
 /*Efecto al poner el cursor sobre un boton*/
 .allButton:hover{
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px #000001;
+    border: 2px solid #c6c6c6;
     color: #FFD700;
     background-color: #B80F0F;
 
